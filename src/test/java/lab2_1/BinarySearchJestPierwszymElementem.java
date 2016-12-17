@@ -12,14 +12,15 @@ public class BinarySearchJestPierwszymElementem {
 	@Test
 	public void test(){
 		
-		int key=1;
-		int[] seq={1,2,3};
-		int i;		
+		int key = 1;
+		int[] seq = {1,2,3};
+		int i;
 		
 		SearchResult searchResult = BinarySearch.search(key, seq);
 		i=searchResult.getPosition();
 		
-		assertEquals(0,i);
+		assertTrue(searchResult.isFound());
+		assertEquals(key, seq[i]);
 		
 	}
 
