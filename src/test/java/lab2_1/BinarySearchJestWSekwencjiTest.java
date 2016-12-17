@@ -8,13 +8,12 @@ import edu.iis.mto.bsearch.BinarySearch;
 
 public class BinarySearchJestWSekwencjiTest {
 	
+	int key=1;
+	int[] seq ={1,2};
 	
 	
 	@Test
-	public void test(){
-		
-		int key=1;
-		int[] seq ={1,2};
+	public void test(){		
 		
 		assertSame(1,BinarySearch.search(key, seq));
 		
