@@ -10,7 +10,7 @@ import edu.iis.mto.bsearch.SearchResult;
 public class BinarySearchNieJestWSekwencji {
 	
 	@Test
-	void test(){
+	public void test(){
 		
 		int key=1;
 		int[] seq={2};
