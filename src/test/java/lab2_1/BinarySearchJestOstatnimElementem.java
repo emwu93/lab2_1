@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import edu.iis.mto.bsearch.BinarySearch;
 import edu.iis.mto.bsearch.SearchResult;
+import static org.hamcrest.CoreMatchers.*;
 
 public class BinarySearchJestOstatnimElementem {
 
@@ -20,7 +21,9 @@ public void test(){
 	i=searchResult.getPosition();
 	
 	assertTrue(searchResult.isFound());
-	assertEquals(key, seq[i-1]);
+	assertEquals(key, seq[i]);
+	
+
 }
 
 	

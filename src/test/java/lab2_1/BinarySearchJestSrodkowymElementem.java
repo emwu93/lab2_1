@@ -20,7 +20,7 @@ public class BinarySearchJestSrodkowymElementem {
 	i=searchResult.getPosition();
 	
 	assertTrue(searchResult.isFound());
-	assertEquals(key, seq[i-1]);
+	assertEquals(key, seq[i]);
 }
 
 }
