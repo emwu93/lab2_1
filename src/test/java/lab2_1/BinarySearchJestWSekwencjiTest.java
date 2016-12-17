@@ -5,17 +5,16 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import edu.iis.mto.bsearch.BinarySearch;
+import edu.iis.mto.bsearch.SearchResult;
 
 public class BinarySearchJestWSekwencjiTest {
-	
-	int key=1;
-	int[] seq ={1,2};
-	
-	
+
 	@Test
 	public void test(){		
+		int key = 1;
+		int[] seq = {1};
 		
-		assertSame(1,BinarySearch.search(key, seq));
+		SearchResult searchResult = BinarySearch.search(key, seq);
 		
 	}
 	
