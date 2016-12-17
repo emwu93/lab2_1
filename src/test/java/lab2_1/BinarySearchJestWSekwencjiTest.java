@@ -13,9 +13,13 @@ public class BinarySearchJestWSekwencjiTest {
 	public void test(){		
 		int key = 1;
 		int[] seq = {1};
+		int i;
 		
 		SearchResult searchResult = BinarySearch.search(key, seq);
+		i=searchResult.getPosition();
 		
+		assertTrue(searchResult.isFound());
+		assertSame(key, seq[i]);
 	}
 	
 	
