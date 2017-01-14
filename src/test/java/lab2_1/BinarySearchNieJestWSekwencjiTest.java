@@ -9,7 +9,7 @@ import org.junit.Test;
 import edu.iis.mto.bsearch.BinarySearch;
 import edu.iis.mto.bsearch.SearchResult;
 
-public class BinarySearchNieJestWSekwencji {
+public class BinarySearchNieJestWSekwencjiTest {
 	
 	@Test
 	public void test(){

@@ -7,7 +7,7 @@ import edu.iis.mto.bsearch.SearchResult;
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertThat;
 
-public class BinarySearchJestOstatnimElementem {
+public class BinarySearchJestOstatnimElementemTest {
 
 	@Test
 	public void test(){

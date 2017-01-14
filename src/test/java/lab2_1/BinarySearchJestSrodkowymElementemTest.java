@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import edu.iis.mto.bsearch.BinarySearch;
 import edu.iis.mto.bsearch.SearchResult;
-public class BinarySearchJestSrodkowymElementem {
+public class BinarySearchJestSrodkowymElementemTest {
 	
 	
 	@Test

@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import edu.iis.mto.bsearch.BinarySearch;
 
-public class BinarySearchPustaSekwencjaWejsciowa {
+public class BinarySearchPustaSekwencjaWejsciowaTest {
 
 	@Test(expected=IllegalArgumentException.class)
 	public void test(){
