@@ -1,7 +1,6 @@
 package lab2_1;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertThat;
 import org.junit.Test;
@@ -22,8 +21,8 @@ public class BinarySearchJestSrodkowymElementem {
 	i=searchResult.getPosition();
 	
 	assertThat(wart,is(equalTo(searchResult.isFound())));
-	//assertTrue(searchResult.isFound());
-	assertEquals(key, seq[i]);
+	assertThat(key,is(equalTo(seq[i])));
+	
 }
 
 }
