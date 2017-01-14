@@ -2,7 +2,8 @@ package lab2_1;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.assertThat;
 import org.junit.Test;
 
 import edu.iis.mto.bsearch.BinarySearch;
@@ -15,11 +16,13 @@ public class BinarySearchJestSrodkowymElementem {
 	int key = 2;
 	int[] seq = {1,2,3};
 	int i;
+	boolean wart = true;
 	
 	SearchResult searchResult = BinarySearch.search(key, seq);
 	i=searchResult.getPosition();
 	
-	assertTrue(searchResult.isFound());
+	assertThat(wart,is(equalTo(searchResult.isFound())));
+	//assertTrue(searchResult.isFound());
 	assertEquals(key, seq[i]);
 }
 
