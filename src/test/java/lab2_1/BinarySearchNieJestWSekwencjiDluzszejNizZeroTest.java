@@ -11,7 +11,7 @@ public class BinarySearchNieJestWSekwencjiLong {
 	@Test
 	public void test(){
 		
-		int key=4;
+		int key=9;
 		int[] seq={1,2,3};
 		int i;
 		int value=-1;
