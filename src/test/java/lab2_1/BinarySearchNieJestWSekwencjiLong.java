@@ -5,6 +5,8 @@ import static org.junit.Assert.assertFalse;
 import org.junit.Test;
 import edu.iis.mto.bsearch.BinarySearch;
 import edu.iis.mto.bsearch.SearchResult;
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.assertThat;
 
 public class BinarySearchNieJestWSekwencjiLong {
 
@@ -14,11 +16,13 @@ public class BinarySearchNieJestWSekwencjiLong {
 		int key=4;
 		int[] seq={1,2,3};
 		int i;
+		boolean wart=false;
 		
 		SearchResult searchResult = BinarySearch.search(key, seq);
 		i=searchResult.getPosition();
 		
-		assertFalse(searchResult.isFound());
+		assertThat(wart,is(equalTo(searchResult.isFound())));
+		//assertFalse(searchResult.isFound());
 		assertEquals(-1,i);
 	}
 	
