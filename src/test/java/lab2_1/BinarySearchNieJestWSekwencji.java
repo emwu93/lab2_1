@@ -24,8 +24,7 @@ public class BinarySearchNieJestWSekwencji {
 		i=searchResult.getPosition();
 		
 		assertThat(wart,is(equalTo(searchResult.isFound())));
-		//assertFalse(searchResult.isFound());
-		assertEquals(-1,i);
+		assertThat(value,is(equalTo(i)));
 	}
 
 }
