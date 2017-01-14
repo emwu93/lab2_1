@@ -1,7 +1,7 @@
 package lab2_1;
 
-
-import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
@@ -9,22 +9,21 @@ import org.junit.Test;
 import edu.iis.mto.bsearch.BinarySearch;
 import edu.iis.mto.bsearch.SearchResult;
 
-public class BinarySearchJestWSekwencjiTest {
-
+public class BinarySearchNieJestWSekwencjiMniejszyOdPierwszegoElementuSekwencji {
+	
 	@Test
-	public void test(){		
+	public void test(){
 		
-		int key = 1;
-		int[] seq = {1};
+		int key=0;
+		int[] seq={1,2,3};
 		int i;
-		boolean wart=true;		
+		int value=-1;
+		boolean wart=false;
 		
 		SearchResult searchResult = BinarySearch.search(key, seq);
 		i=searchResult.getPosition();
 		
 		assertThat(wart,is(equalTo(searchResult.isFound())));
-		assertThat(key,is(equalTo(seq[i])));		
+		assertThat(value,is(equalTo(i)));
 	}
-	
-	
 }
