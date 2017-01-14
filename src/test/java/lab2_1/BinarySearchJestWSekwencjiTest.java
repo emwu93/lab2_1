@@ -1,6 +1,6 @@
 package lab2_1;
 
-import static org.junit.Assert.*;
+
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertThat;
 
