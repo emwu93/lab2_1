@@ -15,7 +15,7 @@ public class BinarySearchNieJestWSekwencji {
 	public void test(){
 		
 		int key=4;
-		int[] seq={1,2,3};
+		int[] seq={1};
 		int i;
 		int value= -1;
 		boolean wart=false;
