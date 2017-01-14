@@ -20,6 +20,7 @@ public class BinarySearchJestPierwszymElementem {
 		i=searchResult.getPosition();
 		
 		assertTrue(searchResult.isFound());
+		
 		assertEquals(key, seq[i]);
 		
 	}

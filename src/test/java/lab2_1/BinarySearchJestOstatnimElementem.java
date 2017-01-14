@@ -22,7 +22,6 @@ public class BinarySearchJestOstatnimElementem {
 	SearchResult searchResult = BinarySearch.search(key, seq);
 	i=searchResult.getPosition();
 	
-	
 	assertThat(wart,is(equalTo(searchResult.isFound())));
 	assertThat(key,is(equalTo(seq[i])));
 	
