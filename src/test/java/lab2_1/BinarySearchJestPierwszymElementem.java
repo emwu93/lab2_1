@@ -23,8 +23,7 @@ public class BinarySearchJestPierwszymElementem {
 		i=searchResult.getPosition();
 		
 		assertThat(wart,is(equalTo(searchResult.isFound())));
-		assertThat(key,is(equalTo(seq[i])));
-		
+		assertThat(key,is(equalTo(seq[i])));		
 		
 	}
 

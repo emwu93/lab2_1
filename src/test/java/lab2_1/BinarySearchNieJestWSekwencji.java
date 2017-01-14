@@ -15,6 +15,7 @@ public class BinarySearchNieJestWSekwencji {
 		int key=4;
 		int[] seq={1,2,3};
 		int i;
+		int value= -1;
 		
 		SearchResult searchResult = BinarySearch.search(key, seq);
 		i=searchResult.getPosition();
