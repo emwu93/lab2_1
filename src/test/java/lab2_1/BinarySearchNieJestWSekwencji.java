@@ -1,6 +1,8 @@
 package lab2_1;
 
 import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
@@ -16,11 +18,13 @@ public class BinarySearchNieJestWSekwencji {
 		int[] seq={1,2,3};
 		int i;
 		int value= -1;
+		boolean wart=false;
 		
 		SearchResult searchResult = BinarySearch.search(key, seq);
 		i=searchResult.getPosition();
 		
-		assertFalse(searchResult.isFound());
+		assertThat(wart,is(equalTo(searchResult.isFound())));
+		//assertFalse(searchResult.isFound());
 		assertEquals(-1,i);
 	}
 
