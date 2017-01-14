@@ -22,8 +22,7 @@ public class BinarySearchJestWSekwencjiTest {
 		i=searchResult.getPosition();
 		
 		assertThat(wart,is(equalTo(searchResult.isFound())));
-		//assertTrue(searchResult.isFound());
-		assertEquals(key, seq[i]);
+		assertThat(key,is(equalTo(seq[i])));		
 	}
 	
 	
